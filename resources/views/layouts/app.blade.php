@@ -10,7 +10,7 @@
 
 <title>@yield('title','Katalog') · Ruang Belanja</title> 
 
-<link rel="stylesheet" href="{{ asset('css/store.css') }}"> 
+<link rel="stylesheet" href="{{ asset('css/style.css') }}">
 
 </head> 
 
