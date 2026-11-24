@@ -1,0 +1,8 @@
+$kind: http-request
+name: Skenario 1 — Membaca Katalog Publik
+url: http://127.0.0.1:8000/api/v1/products?ready=1&sort=price_asc
+method: GET
+queryParams:
+  ready: "1"
+  sort: price_asc
+order: 18000

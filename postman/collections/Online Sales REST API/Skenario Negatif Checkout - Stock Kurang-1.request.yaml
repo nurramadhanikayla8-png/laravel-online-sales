@@ -1,0 +1,33 @@
+$kind: http-request
+name: Skenario Negatif Checkout - Stock Kurang
+url: http://127.0.0.1:8000/api/v1/checkout
+method: POST
+headers:
+  Accept: application/json
+  Content-Type: application/json
+body:
+  type: json
+  content: "{\r
+
+    \  \"recipient_name\": \"Budi Customer\",\r
+
+    \  \"phone\": \"081234567890\",\r
+
+    \  \"address\": \"Jl. Praktikum No. 10, Purwokerto\",\r
+
+    \  \"shipping_service_id\": 1,\r
+
+    \  \"items\": [\r
+
+    \    {\"product_id\": 3, \"quantity\": 99},\r
+
+    \    {\"product_id\": 5, \"quantity\": 100}\r
+
+    \  ]\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: 4|p27QnCQod4eKzXyo8xSCyUULx0isbqT8s4urEneN456a97f6
+order: 12000
