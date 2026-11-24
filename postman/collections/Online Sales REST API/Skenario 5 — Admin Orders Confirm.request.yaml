@@ -1,0 +1,28 @@
+$kind: http-request
+url: http://127.0.0.1:8000/api/v1/admin/orders/4/confirm
+method: PATCH
+headers:
+  Accept: application/json
+  Content-Type: application/json
+body:
+  type: json
+  content: "{\r
+
+    \  \"email\": \"admin@example.com\",\r
+
+    \  \"password\": \"Admin12345!\",\r
+
+    \  \"device_name\": \"postman admin\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: 5|4kCbIbtRDUWnJqbw4eEkrigWldFpBE58itK8lQ8Ucf614c14
+scripts:
+  - type: afterResponse
+    code: "const json = pm.response.json(); \r
+
+      pm.collectionVariables.set('customer_token', json.access_token); "
+    language: text/javascript
+order: 6000
