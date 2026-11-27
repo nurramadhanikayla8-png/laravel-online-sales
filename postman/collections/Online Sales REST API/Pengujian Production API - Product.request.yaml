@@ -1,0 +1,6 @@
+$kind: http-request
+url: https://laravel-online-sales-4ijenwc8x-kayla-nur-ramadhani.vercel.app/api/v1/products
+method: GET
+headers:
+  Accept: application/json
+order: 19000

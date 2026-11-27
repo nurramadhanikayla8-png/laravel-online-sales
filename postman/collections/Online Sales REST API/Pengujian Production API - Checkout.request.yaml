@@ -1,0 +1,40 @@
+$kind: http-request
+url: https://laravel-online-sales-4ijenwc8x-kayla-nur-ramadhani.vercel.app/api/v1/checkout
+method: POST
+headers:
+  Accept: application/json
+  Content-Type: application/json
+body:
+  type: json
+  content: "{\r
+
+    \    \"recipient_name\": \"Kayla Nur Ramadhani\",\r
+
+    \    \"phone\": \"081230098051\",\r
+
+    \    \"address\": \"jl merpati\",\r
+
+    \    \"shipping_service_id\": 1,\r
+
+    \    \"items\": [\r
+
+    \        {\r
+
+    \            \"product_id\": 1,\r
+
+    \            \"quantity\": 1\r
+
+    \        }\r
+
+    \    ]\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: 2|hrR7ifX61cvWzYHa45rofsswWisgsWGmQLCmOT9313848ca9
+scripts:
+  - type: afterResponse
+    code: ""
+    language: text/javascript
+order: 20000

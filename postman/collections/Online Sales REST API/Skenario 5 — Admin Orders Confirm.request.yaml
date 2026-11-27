@@ -25,4 +25,4 @@ scripts:
 
       pm.collectionVariables.set('customer_token', json.access_token); "
     language: text/javascript
-order: 6000
+order: 7000

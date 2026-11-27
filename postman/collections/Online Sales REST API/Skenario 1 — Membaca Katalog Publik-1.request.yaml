@@ -5,4 +5,4 @@ method: GET
 queryParams:
   ready: "1"
   sort: price_asc
-order: 18000
+order: 2000
